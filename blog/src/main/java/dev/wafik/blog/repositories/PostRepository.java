@@ -13,7 +13,9 @@ import java.util.Optional;
 
 public interface PostRepository extends JpaRepository<Post, Integer> {
     boolean existsById(@NotNull Integer id);
+
     List<Post> findAllByAuthor_Id(Integer author_id);
+
 
 
 }
